@@ -1,10 +1,10 @@
-<h1 align="center">Selamat datang di Sistem Informasi Akademik Sekolah! 👋</h1>
+<h1 align="center">Selamat datang di Sistem Informasi Akademik! 👋</h1>
 
-## Apa itu Sistem Informasi Akademik Sekolah?
+## Apa itu Sistem Informasi Akademik?
 
-Web Sistem Informasi Akademik Sekolah yang dibuat oleh <a href="https://github.com/adhiariyadi"> Adhi Ariyadi </a>. **Sistem Informasi Akademik Sekolah adalah Website untuk para siswa dapat melihat jadwal pelajaran, dan nilai rapot dan para guru dapat menambahkan nilai siswa dengan muda melalui website.**
+Web Sistem Informasi Akademik yang dibuat oleh <a href="https://github.com/suryo"> Adhi Ariyadi </a>. **Sistem Informasi Akademik  adalah Website untuk para siswa/mahasiswa dapat melihat jadwal pelajaran, dan nilai rapot dan para guru dapat menambahkan nilai siswa dengan muda melalui website.**
 
-## Fitur apa saja yang tersedia di Sistem Informasi Akademik Sekolah?
+## Fitur apa saja yang tersedia di Sistem Informasi Akademik?
 
 - Autentikasi Admin
 - User & CRUD
@@ -20,7 +20,7 @@ Web Sistem Informasi Akademik Sekolah yang dibuat oleh <a href="https://github.c
 
 **Release date : 28 Apr 2020**
 
-> Sistem Informasi Akademik Sekolah merupakan project open source yang dibuat oleh Adhi Ariyadi. Kalian dapat download/fork/clone. Cukup beri stars di project ini agar memberiku semangat. Terima kasih!
+> Sistem Informasi Akademik merupakan project open source yang dibuat oleh Suryo Atmojo. Kalian dapat download/fork/clone. Cukup beri stars di project ini agar memberiku semangat. Terima kasih!
 
 ---
 
@@ -38,8 +38,8 @@ Web Sistem Informasi Akademik Sekolah yang dibuat oleh <a href="https://github.c
 1. **Clone Repository**
 
 ```bash
-git clone https://github.com/adhiariyadi/Sistem-Informasi-Akademik-Sekolah-Laravel.git
-cd Sistem-Informasi-Akademik-Sekolah-Laravel
+git clone
+cd Sistem-Informasi-Akademik-Laravel
 composer install
 cp .env.example .env
 ```
@@ -68,8 +68,7 @@ php artisan serve
 
 ## Author
 
-- Facebook : <a href="https://web.facebook.com/adhiariyadi.me/"> Adhi Ariyadi</a>
-- LinkedIn : <a href="https://www.linkedin.com/in/adhiariyadi/"> Adhi Ariyadi</a>
+suryoatm@gmail.com
 
 ## Contributing
 
@@ -78,5 +77,5 @@ Jangan ragu untuk memeriksa halaman masalah jika Anda ingin berkontribusi. **Ber
 
 ## License
 
-- Copyright © 2020 Adhi Ariyadi.
-- **Sistem Informasi Akademik Sekolah is open-sourced software licensed under the MIT license.**
+- Copyright © 2023 Suryo Atmojo.
+- **Sistem Informasi Akademik is open-sourced software licensed under the MIT license.**
