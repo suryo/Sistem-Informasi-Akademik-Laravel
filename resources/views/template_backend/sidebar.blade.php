@@ -51,6 +51,18 @@
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a href="{{ route('dosen.index') }}" class="nav-link" id="DataDosen">
+                                    <i class="fas fa-users nav-icon"></i>
+                                    <p>Data Dosen</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('asdos.index') }}" class="nav-link" id="DataAsdos">
+                                    <i class="fas fa-users nav-icon"></i>
+                                    <p>Data Asdos</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="{{ route('guru.index') }}" class="nav-link" id="DataGuru">
                                     <i class="fas fa-users nav-icon"></i>
                                     <p>Data Guru</p>
@@ -66,6 +78,12 @@
                                 <a href="{{ route('siswa.index') }}" class="nav-link" id="DataSiswa">
                                     <i class="fas fa-users nav-icon"></i>
                                     <p>Data Siswa</p>
+                                </a>
+                            </li>
+                             <li class="nav-item">
+                                <a href="{{ route('matkul.index') }}" class="nav-link" id="DataMatkul">
+                                    <i class="fas fa-book nav-icon"></i>
+                                    <p>Data Matkul</p>
                                 </a>
                             </li>
                             <li class="nav-item">
