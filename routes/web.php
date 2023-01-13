@@ -82,6 +82,12 @@ Route::middleware(['auth'])->group(function () {
       Route::get('/mapel/trash', 'MapelController@trash')->name('mapel.trash');
       Route::get('/mapel/restore/{id}', 'MapelController@restore')->name('mapel.restore');
       Route::delete('/mapel/kill/{id}', 'MapelController@kill')->name('mapel.kill');
+
+      Route::get('/matkul/trash', 'MatkulController@trash')->name('matkul.trash');
+      Route::get('/matkul/restore/{id}', 'MatkulController@restore')->name('matkul.restore');
+      Route::delete('/matkul/kill/{id}', 'MatkulController@kill')->name('matkul.kill');
+
+
       Route::get('/user/trash', 'UserController@trash')->name('user.trash');
       Route::get('/user/restore/{id}', 'UserController@restore')->name('user.restore');
       Route::delete('/user/kill/{id}', 'UserController@kill')->name('user.kill');
@@ -93,6 +99,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/guru/kehadiran/{id}', 'GuruController@kehadiran')->name('guru.kehadiran');
     Route::get('/absen/json', 'GuruController@json');
     Route::get('/guru/mapel/{id}', 'GuruController@mapel')->name('guru.mapel');
+
+    Route::get('/dosen/matkul/{id}', 'DosenController@matkul')->name('dosen.matkul');
+
+
     Route::get('/guru/ubah-foto/{id}', 'GuruController@ubah_foto')->name('guru.ubah-foto');
     Route::post('/guru/update-foto/{id}', 'GuruController@update_foto')->name('guru.update-foto');
     Route::post('/guru/upload', 'GuruController@upload')->name('guru.upload');
@@ -100,6 +110,24 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/guru/import_excel', 'GuruController@import_excel')->name('guru.import_excel');
     Route::delete('/guru/deleteAll', 'GuruController@deleteAll')->name('guru.deleteAll');
     Route::resource('/guru', 'GuruController');
+
+    Route::get('/dosen/ubah-foto/{id}', 'DosenController@ubah_foto')->name('dosen.ubah-foto');
+    Route::post('/dosen/update-foto/{id}', 'DosenController@update_foto')->name('dosen.update-foto');
+    Route::post('/dosen/upload', 'DosenController@upload')->name('dosen.upload');
+    Route::get('/dosen/export_excel', 'DosenController@export_excel')->name('dosen.export_excel');
+    Route::post('/dosen/import_excel', 'DosenController@import_excel')->name('dosen.import_excel');
+    Route::delete('/dosen/deleteAll', 'DosenController@deleteAll')->name('dosen.deleteAll');
+    Route::resource('/dosen', 'DosenController');
+
+    Route::get('/asdos/ubah-foto/{id}', 'AsdosController@ubah_foto')->name('asdos.ubah-foto');
+    Route::post('/asdos/update-foto/{id}', 'AsdosController@update_foto')->name('asdos.update-foto');
+    Route::post('/asdos/upload', 'AsdosController@upload')->name('asdos.upload');
+    Route::get('/asdos/export_excel', 'AsdosController@export_excel')->name('asdos.export_excel');
+    Route::post('/asdos/import_excel', 'AsdosController@import_excel')->name('asdos.import_excel');
+    Route::delete('/asdos/deleteAll', 'AsdosController@deleteAll')->name('asdos.deleteAll');
+    Route::resource('/asdos', 'AsdosController');
+
+
     Route::get('/kelas/edit/json', 'KelasController@getEdit');
     Route::resource('/kelas', 'KelasController');
     Route::get('/siswa/kelas/{id}', 'SiswaController@kelas')->name('siswa.kelas');
@@ -113,6 +141,10 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/siswa', 'SiswaController');
     Route::get('/mapel/getMapelJson', 'MapelController@getMapelJson');
     Route::resource('/mapel', 'MapelController');
+
+    Route::get('/matkul/getMatkulJson', 'MatkulController@getMatkulJson');
+    Route::resource('/matkul', 'MatkulController');
+
     Route::get('/jadwal/view/json', 'JadwalController@view');
     Route::get('/jadwalkelaspdf/{id}', 'JadwalController@cetak_pdf');
     Route::get('/jadwal/export_excel', 'JadwalController@export_excel')->name('jadwal.export_excel');
