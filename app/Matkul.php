@@ -10,7 +10,7 @@ class Matkul extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['id', 'nama_matkul', 'paket_id', 'kelompok'];
+    protected $fillable = ['id', 'nama_matkul', 'semester_id', 'kelompok'];
 
     public function paket()
     {
@@ -31,5 +31,5 @@ class Matkul extends Model
         return $sikap;
     }
 
-    protected $table = 'mapel';
+    protected $table = 'matkul';
 }
